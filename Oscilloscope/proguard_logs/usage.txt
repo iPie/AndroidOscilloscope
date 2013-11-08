@@ -1,0 +1,195 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.ajx.oscilloscope.BuildConfig
+com.ajx.oscilloscope.R
+com.ajx.oscilloscope.R$attr
+com.ajx.oscilloscope.R$drawable
+com.ajx.oscilloscope.R$id
+com.ajx.oscilloscope.R$layout
+com.ajx.oscilloscope.R$string
+com.ajx.oscilloscope.R$xml
+com.ajx.oscilloscope.SettingsFragment
+com.ajx.oscilloscope.UsartActivity:
+    105:117:private void _$addRandomData()
+com.ajx.oscilloscope.UsartActivity$2
+com.ajx.oscilloscope.UsartActivity$2$1
+com.ajx.oscilloscope.util.DeviceManager$DataBufferParser
+com.ajx.oscilloscope.util.DynamicChart:
+    private static final java.lang.String KEY_PREF_MAX_VALUE
+    private static final java.lang.String KEY_PREF_MIN_VALUE
+    private static final java.lang.String KEY_PREF_BUFFER_OFFSET
+    private static final java.lang.String KEY_PREF_PLOT_RAW_DATA
+com.hoho.android.usbserial.BuildConfig
+com.hoho.android.usbserial.BuildInfo
+com.hoho.android.usbserial.R
+com.hoho.android.usbserial.R$attr
+com.hoho.android.usbserial.R$drawable
+com.hoho.android.usbserial.R$id
+com.hoho.android.usbserial.R$layout
+com.hoho.android.usbserial.R$string
+com.hoho.android.usbserial.R$xml
+com.hoho.android.usbserial.driver.CdcAcmSerialDriver:
+    private static final int USB_RECIP_INTERFACE
+    private static final int USB_RT_ACM
+    private static final int SET_LINE_CODING
+    private static final int GET_LINE_CODING
+    private static final int SET_CONTROL_LINE_STATE
+    private static final int SEND_BREAK
+    174:174:public boolean getCD()
+    179:179:public boolean getCTS()
+    184:184:public boolean getDSR()
+    189:189:public boolean getDTR()
+    194:196:public void setDTR(boolean)
+    200:200:public boolean getRI()
+    205:205:public boolean getRTS()
+    210:212:public void setRTS(boolean)
+    215:217:private void setDtrRts()
+com.hoho.android.usbserial.driver.CommonUsbSerialDriver:
+    public static final int DEFAULT_READ_BUFFER_SIZE
+    public static final int DEFAULT_WRITE_BUFFER_SIZE
+    64:64:public final android.hardware.usb.UsbDevice getDevice()
+    74:80:public final void setReadBufferSize(int)
+    89:95:public final void setWriteBufferSize(int)
+    public abstract void open()
+    public abstract void close()
+    public abstract int read(byte[],int)
+    public abstract int write(byte[],int)
+    public abstract void setParameters(int,int,int,int)
+    public abstract boolean getCD()
+    public abstract boolean getCTS()
+    public abstract boolean getDSR()
+    public abstract boolean getDTR()
+    public abstract void setDTR(boolean)
+    public abstract boolean getRI()
+    public abstract boolean getRTS()
+    public abstract void setRTS(boolean)
+com.hoho.android.usbserial.driver.Cp2102SerialDriver:
+    private static final int DEFAULT_BAUD_RATE
+    private static final int USB_WRITE_TIMEOUT_MILLIS
+    private static final int REQTYPE_HOST_TO_DEVICE
+    private static final int SILABSER_IFC_ENABLE_REQUEST_CODE
+    private static final int SILABSER_SET_BAUDDIV_REQUEST_CODE
+    private static final int SILABSER_SET_LINE_CTL_REQUEST_CODE
+    private static final int SILABSER_SET_MHS_REQUEST_CODE
+    private static final int SILABSER_SET_BAUDRATE
+    private static final int UART_ENABLE
+    private static final int UART_DISABLE
+    private static final int BAUD_RATE_GEN_FREQ
+    private static final int MCR_DTR
+    private static final int MCR_RTS
+    private static final int MCR_ALL
+    private static final int CONTROL_WRITE_DTR
+    private static final int CONTROL_WRITE_RTS
+    229:229:public boolean getCD()
+    234:234:public boolean getCTS()
+    239:239:public boolean getDSR()
+    244:244:public boolean getDTR()
+    249:249:public void setDTR(boolean)
+    253:253:public boolean getRI()
+    258:258:public boolean getRTS()
+    263:263:public void setRTS(boolean)
+com.hoho.android.usbserial.driver.FtdiSerialDriver:
+    public static final int USB_TYPE_STANDARD
+    public static final int USB_TYPE_CLASS
+    public static final int USB_TYPE_VENDOR
+    public static final int USB_TYPE_RESERVED
+    public static final int USB_RECIP_DEVICE
+    public static final int USB_RECIP_INTERFACE
+    public static final int USB_RECIP_ENDPOINT
+    public static final int USB_RECIP_OTHER
+    public static final int USB_ENDPOINT_IN
+    public static final int USB_ENDPOINT_OUT
+    public static final int USB_WRITE_TIMEOUT_MILLIS
+    public static final int USB_READ_TIMEOUT_MILLIS
+    private static final int SIO_RESET_REQUEST
+    private static final int SIO_MODEM_CTRL_REQUEST
+    private static final int SIO_SET_FLOW_CTRL_REQUEST
+    private static final int SIO_SET_BAUD_RATE_REQUEST
+    private static final int SIO_SET_DATA_REQUEST
+    private static final int SIO_RESET_SIO
+    public static final int FTDI_DEVICE_OUT_REQTYPE
+    public static final int FTDI_DEVICE_IN_REQTYPE
+    private static final int MODEM_STATUS_HEADER_LENGTH
+    private static final boolean ENABLE_ASYNC_READS
+    479:479:public boolean getCD()
+    484:484:public boolean getCTS()
+    489:489:public boolean getDSR()
+    494:494:public boolean getDTR()
+    499:499:public void setDTR(boolean)
+    503:503:public boolean getRI()
+    508:508:public boolean getRTS()
+    513:513:public void setRTS(boolean)
+com.hoho.android.usbserial.driver.UsbId
+com.hoho.android.usbserial.driver.UsbSerialDriver:
+    public static final int DATABITS_5
+    public static final int DATABITS_6
+    public static final int DATABITS_7
+    public static final int DATABITS_8
+    public static final int FLOWCONTROL_NONE
+    public static final int FLOWCONTROL_RTSCTS_IN
+    public static final int FLOWCONTROL_RTSCTS_OUT
+    public static final int FLOWCONTROL_XONXOFF_IN
+    public static final int FLOWCONTROL_XONXOFF_OUT
+    public static final int PARITY_NONE
+    public static final int PARITY_ODD
+    public static final int PARITY_EVEN
+    public static final int PARITY_MARK
+    public static final int PARITY_SPACE
+    public static final int STOPBITS_1
+    public static final int STOPBITS_1_5
+    public static final int STOPBITS_2
+    public abstract boolean getCD()
+    public abstract boolean getCTS()
+    public abstract boolean getDSR()
+    public abstract boolean getDTR()
+    public abstract void setDTR(boolean)
+    public abstract boolean getRI()
+    public abstract boolean getRTS()
+    public abstract void setRTS(boolean)
+com.hoho.android.usbserial.driver.UsbSerialProber:
+    148:154:public static java.util.List findAllDevices(android.hardware.usb.UsbManager)
+    172:177:public static java.util.List probeSingleDevice(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice)
+    188:188:public static com.hoho.android.usbserial.driver.UsbSerialDriver acquire(android.hardware.usb.UsbManager)
+    200:204:public static com.hoho.android.usbserial.driver.UsbSerialDriver acquire(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice)
+com.hoho.android.usbserial.driver.UsbSerialRuntimeException
+com.hoho.android.usbserial.util.HexDump
+com.hoho.android.usbserial.util.SerialInputOutputManager:
+    private static final boolean DEBUG
+    private static final int READ_WAIT_MILLIS
+    private static final int BUFSIZ
+    82:83:public SerialInputOutputManager(com.hoho.android.usbserial.driver.UsbSerialDriver)
+    94:95:public synchronized void setListener(com.hoho.android.usbserial.util.SerialInputOutputManager$Listener)
+    102:105:public void writeAsync(byte[])
+com.jjoe64.graphview.BarGraphView:
+    38:39:public BarGraphView(android.content.Context,java.lang.String)
+com.jjoe64.graphview.GraphView:
+    670:670:public boolean isShowLegend()
+    694:701:public void removeAllSeries()
+    708:711:public void removeSeries(com.jjoe64.graphview.GraphViewSeries)
+    718:723:public void removeSeries(int)
+    883:885:public void setViewPort(double,double)
+    319:319:static synthetic void access$25(com.jjoe64.graphview.GraphView,double)
+com.jjoe64.graphview.GraphView$1:
+    817:841:public boolean onScale(com.jjoe64.graphview.compatible.ScaleGestureDetector)
+com.jjoe64.graphview.GraphView$GraphViewConfig
+com.jjoe64.graphview.GraphViewSeries:
+    73:80:public GraphViewSeries(java.lang.String,com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle,com.jjoe64.graphview.GraphViewDataInterface[])
+    98:109:public void appendData(com.jjoe64.graphview.GraphViewDataInterface,boolean)
+    149:149:public com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle getStyle()
+    157:158:public void removeGraphView(com.jjoe64.graphview.GraphView)
+    166:170:public void resetData(com.jjoe64.graphview.GraphViewDataInterface[])
+com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle:
+    42:45:public GraphViewSeries$GraphViewSeriesStyle(int,int)
+    57:58:public void setValueDependentColor(com.jjoe64.graphview.ValueDependentColor)
+com.jjoe64.graphview.GraphViewStyle:
+    44:48:public GraphViewStyle(int,int,int)
+    79:80:public void setGridColor(int)
+    90:91:public void setNumHorizontalLabels(int)
+    105:106:public void setVerticalLabelsColor(int)
+com.jjoe64.graphview.compatible.RealScaleGestureDetector:
+    29:35:public RealScaleGestureDetector(android.content.Context,com.jjoe64.graphview.compatible.ScaleGestureDetector,com.jjoe64.graphview.compatible.ScaleGestureDetector$SimpleOnScaleGestureListener)
+com.jjoe64.graphview.compatible.RealScaleGestureDetector$1
+com.jjoe64.graphview.compatible.ScaleGestureDetector:
+    65:73:public double getScaleFactor()
+com.jjoe64.graphview.compatible.ScaleGestureDetector$SimpleOnScaleGestureListener:
+    public abstract boolean onScale(com.jjoe64.graphview.compatible.ScaleGestureDetector)

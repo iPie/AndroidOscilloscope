@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Oscilloscope</string>
+    <string name="connect">Connect</string>
+    <string name="send">Send</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="chart_settings">Chart settings</string>
+    <string name="device_settings">Device settings</string>
+    <string name="device_header">Device</string>
+    <string name="device_header_sum">Device and serial port settings</string>
+    <string name="chart_header">Chart</string>
+    <string name="chart_header_sum">Axis boundaries and plot settings</string>
+    <string name="baud_rate_sum">Set device baud rate</string>
+    <string name="baud_rate">Baud rate</string>
+    <string name="byte_swap_sum">Swap bytes if they are received in wrong order</string>
+    <string name="byte_swap">Enable byte swapping</string>
+    <string name="data_bits_sum">Number of data bits</string>
+    <string name="data_bits">Data bits</string>
+    <string name="stop_bits_sum">Number of stop bits</string>
+    <string name="stop_bits">Stop bits</string>
+    <string name="parity">Parity</string>
+    <string name="parity_sum">Set parity mode</string>
+    <string name="start_command_sum">Device command to start data transfer</string>
+    <string name="start_command">Start command</string>
+    <string name="stop_command">Stop command</string>
+    <string name="stop_command_sum">Device command to stop data transfer</string>
+    <string name="min_value">Min voltage</string>
+    <string name="max_value">Max voltage</string>
+    <string name="min_value_sum">Minimum voltage value</string>
+    <string name="max_value_sum">Maximum voltage value</string>
+    <string name="plot_raw_data">Plot raw data</string>
+    <string name="plot_raw_data_sum">Plot raw ADC values instead of voltages</string>
+    <string name="allow_bad_bytes_sum">Continue plotting if corrupted data received</string>
+    <string name="allow_bad_bytes">Allow bad bytes</string>
+    <string name="buffer_offset_sum">Size of chart buffer (setting higher values may affect performance)</string>
+    <string name="buffer_offset">Buffer offset</string>
+
+</resources>

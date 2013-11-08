@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="com.ajx.oscilloscope.SettingsFragment"
+        android:summary="@string/device_header_sum"
+        android:title="@string/device_header">
+        <extra
+            android:name="resource"
+            android:value="device_preferences" />
+    </header>
+    <header
+        android:fragment="com.ajx.oscilloscope.SettingsFragment"
+        android:summary="@string/chart_header_sum"
+        android:title="@string/chart_header">
+        <extra
+            android:name="resource"
+            android:value="chart_preferences" />
+    </header>
+</preference-headers>

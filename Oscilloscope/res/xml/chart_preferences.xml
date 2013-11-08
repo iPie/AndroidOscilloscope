@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/chart_settings">
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="numberDecimal"
+            android:key="min_value"
+            android:numeric="decimal"
+            android:summary="@string/min_value_sum"
+            android:title="@string/min_value" />
+        <EditTextPreference
+            android:defaultValue="1024"
+            android:inputType="numberDecimal"
+            android:key="max_value"
+            android:numeric="decimal"
+            android:summary="@string/max_value_sum"
+            android:title="@string/max_value" />
+        <EditTextPreference
+            android:defaultValue="200"
+            android:inputType="numberSigned"
+            android:key="buffer_offset"
+            android:numeric="integer"
+            android:summary="@string/buffer_offset_sum"
+            android:title="@string/buffer_offset" />
+
+        <EditTextPreference
+            android:defaultValue="2.56"
+            android:inputType="numberDecimal"
+            android:key="reference_voltage"
+            android:numeric="decimal"
+            android:title="Reference voltage" />
+        <EditTextPreference
+            android:defaultValue="5.54545455"
+            android:inputType="numberDecimal"
+            android:key="multiplier"
+            android:numeric="decimal"
+            android:title="Multiplier" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="numberDecimal"
+            android:key="gain"
+            android:numeric="decimal"
+            android:title="Gain" />
+        <EditTextPreference
+            android:defaultValue="1024"
+            android:inputType="number"
+            android:key="adc_resolution"
+            android:numeric="integer"
+            android:title="ADC resolution" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="calibrate_on_startup"
+            android:summary="Calibrate zero level each time device starts"
+            android:title="Calibrate on startup" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="plot_raw_data"
+            android:summary="@string/plot_raw_data_sum"
+            android:title="@string/plot_raw_data" />
+    </PreferenceCategory>
+</PreferenceScreen>

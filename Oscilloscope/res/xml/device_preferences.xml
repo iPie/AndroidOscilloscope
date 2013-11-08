@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/device_settings">
+        <EditTextPreference
+            android:defaultValue="500000"
+            android:inputType="numberSigned"
+            android:key="baud_rate"
+            android:numeric="integer"
+            android:summary="@string/baud_rate_sum"
+            android:title="@string/baud_rate" />
+        <EditTextPreference
+            android:defaultValue="8"
+            android:inputType="numberSigned"
+            android:key="data_bits"
+            android:numeric="integer"
+            android:summary="@string/data_bits_sum"
+            android:title="@string/data_bits" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="numberSigned"
+            android:key="stop_bits"
+            android:numeric="integer"
+            android:summary="@string/stop_bits_sum"
+            android:title="@string/stop_bits" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="numberSigned"
+            android:key="parity"
+            android:numeric="integer"
+            android:summary="@string/parity_sum"
+            android:title="@string/parity" />
+        <EditTextPreference
+            android:defaultValue="0x52"
+            android:key="start_command"
+            android:summary="@string/start_command_sum"
+            android:title="@string/start_command" />
+        <EditTextPreference
+            android:defaultValue="0x53"
+            android:key="stop_command"
+            android:summary="@string/stop_command_sum"
+            android:title="@string/stop_command" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="swap_bytes"
+            android:summary="@string/byte_swap_sum"
+            android:title="@string/byte_swap" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="allow_bad_bytes"
+            android:summary="@string/allow_bad_bytes_sum"
+            android:title="@string/allow_bad_bytes" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,373 @@
+com.ajx.oscilloscope.SettingsActivity -> com.ajx.oscilloscope.SettingsActivity:
+    void onBuildHeaders(java.util.List) -> onBuildHeaders
+com.ajx.oscilloscope.UsartActivity -> com.ajx.oscilloscope.UsartActivity:
+    com.ajx.oscilloscope.util.DynamicChart chart -> a
+    com.ajx.oscilloscope.util.DeviceManager deviceManager -> b
+    android.widget.TextView logView -> c
+    long previousBytesCount -> d
+    java.util.Timer timer -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onConnectButtonClick(android.view.View) -> onConnectButtonClick
+    void onSettingsButtonClick(android.view.View) -> onSettingsButtonClick
+    void measureTransferRate() -> a
+    com.ajx.oscilloscope.util.DynamicChart access$000(com.ajx.oscilloscope.UsartActivity) -> a
+    com.ajx.oscilloscope.util.DeviceManager access$100(com.ajx.oscilloscope.UsartActivity) -> b
+    long access$200(com.ajx.oscilloscope.UsartActivity) -> c
+    long access$202(com.ajx.oscilloscope.UsartActivity,long) -> a
+    android.widget.TextView access$300(com.ajx.oscilloscope.UsartActivity) -> d
+com.ajx.oscilloscope.UsartActivity$1 -> com.ajx.oscilloscope.a:
+    com.ajx.oscilloscope.UsartActivity this$0 -> a
+    void onValueReceived(int) -> a
+com.ajx.oscilloscope.UsartActivity$1$1 -> com.ajx.oscilloscope.b:
+    int val$value -> a
+    com.ajx.oscilloscope.UsartActivity$1 this$1 -> b
+    void run() -> run
+com.ajx.oscilloscope.UsartActivity$3 -> com.ajx.oscilloscope.c:
+    com.ajx.oscilloscope.UsartActivity this$0 -> a
+    void run() -> run
+com.ajx.oscilloscope.UsartActivity$3$1 -> com.ajx.oscilloscope.d:
+    com.ajx.oscilloscope.UsartActivity$3 this$1 -> a
+    void run() -> run
+com.ajx.oscilloscope.util.DeviceManager -> com.ajx.oscilloscope.a.a:
+    java.lang.String TAG -> a
+    int TIMEOUT -> b
+    java.util.concurrent.ExecutorService mExecutor -> c
+    com.hoho.android.usbserial.util.SerialInputOutputManager$Listener mListener -> d
+    int baudrate -> e
+    int dataBits -> f
+    int stopBits -> g
+    int parity -> h
+    boolean swapBytes -> i
+    boolean allowBadBytes -> j
+    com.ajx.oscilloscope.util.DeviceManager$DataListener dataListener -> k
+    android.content.Context context -> l
+    com.hoho.android.usbserial.driver.UsbSerialDriver driver -> m
+    com.hoho.android.usbserial.util.SerialInputOutputManager mSerialIoManager -> n
+    long bytesCount -> o
+    long getBytesCount() -> a
+    void connect() -> b
+    void disconnect() -> c
+    void startListening() -> d
+    void stopListening() -> e
+    void sendCommand(byte[]) -> a
+    boolean isConnected() -> f
+    boolean isListening() -> g
+    void updateConfig() -> h
+    boolean sampleIsValid(int) -> a
+    void parseBuffer(byte[]) -> b
+    void sendStartCommand() -> i
+    void sendStopCommand() -> j
+    byte[] byteToArray(byte) -> a
+    void initializeDevice() -> k
+    java.lang.String access$000(com.ajx.oscilloscope.util.DeviceManager) -> a
+    void access$100(com.ajx.oscilloscope.util.DeviceManager,byte[]) -> a
+com.ajx.oscilloscope.util.DeviceManager$1 -> com.ajx.oscilloscope.a.b:
+    com.ajx.oscilloscope.util.DeviceManager this$0 -> a
+    void onRunError(java.lang.Exception) -> a
+    void onNewData(byte[]) -> a
+com.ajx.oscilloscope.util.DeviceManager$DataListener -> com.ajx.oscilloscope.a.c:
+    void onValueReceived(int) -> a
+com.ajx.oscilloscope.util.DynamicChart -> com.ajx.oscilloscope.a.d:
+    java.lang.String TAG -> a
+    boolean plotRawData -> b
+    double referenceVoltage -> c
+    com.jjoe64.graphview.GraphView$GraphViewData[] graphData -> d
+    double multiplier -> e
+    int adcResolution -> f
+    double gain -> g
+    com.jjoe64.graphview.GraphViewSeries plotSeries -> h
+    com.jjoe64.graphview.GraphView chart -> i
+    boolean isCalibrating -> j
+    java.util.List calibrationValues -> k
+    int valuesCount -> l
+    int maxValuesCount -> m
+    double maxValue -> n
+    double minValue -> o
+    android.view.ViewGroup view -> p
+    android.content.Context context -> q
+    void initializeChart() -> a
+    void _$playWithData() -> b
+    void updateConfig() -> c
+    void setKeepScreenOn(boolean) -> a
+    void appendData(double) -> a
+    void setBufferOffset(int) -> a
+    void setMaxValue(double) -> b
+    void setMinValue(double) -> c
+    void setGain(double) -> d
+    void calibrate() -> d
+    void calibrate(double) -> e
+    double resultToVoltage(double,double) -> a
+    double resultToVoltage(double) -> f
+com.hoho.android.usbserial.driver.CdcAcmSerialDriver -> com.a.a.a.a.a:
+    java.lang.String TAG -> g
+    android.hardware.usb.UsbInterface mControlInterface -> h
+    android.hardware.usb.UsbInterface mDataInterface -> i
+    android.hardware.usb.UsbEndpoint mControlEndpoint -> j
+    android.hardware.usb.UsbEndpoint mReadEndpoint -> k
+    android.hardware.usb.UsbEndpoint mWriteEndpoint -> l
+    boolean mRts -> m
+    boolean mDtr -> n
+    void open() -> a
+    int sendAcmControlMessage(int,int,byte[]) -> a
+    void close() -> b
+    int read(byte[],int) -> a
+    int write(byte[],int) -> b
+    void setParameters(int,int,int,int) -> a
+    java.util.Map getSupportedDevices() -> c
+com.hoho.android.usbserial.driver.CommonUsbSerialDriver -> com.a.a.a.a.b:
+    android.hardware.usb.UsbDevice mDevice -> a
+    android.hardware.usb.UsbDeviceConnection mConnection -> b
+    java.lang.Object mReadBufferLock -> c
+    java.lang.Object mWriteBufferLock -> d
+    byte[] mReadBuffer -> e
+    byte[] mWriteBuffer -> f
+com.hoho.android.usbserial.driver.Cp2102SerialDriver -> com.a.a.a.a.c:
+    java.lang.String TAG -> g
+    android.hardware.usb.UsbEndpoint mReadEndpoint -> h
+    android.hardware.usb.UsbEndpoint mWriteEndpoint -> i
+    int setConfigSingle(int,int) -> a
+    void open() -> a
+    void close() -> b
+    int read(byte[],int) -> a
+    int write(byte[],int) -> b
+    void setBaudRate(int) -> a
+    void setParameters(int,int,int,int) -> a
+    java.util.Map getSupportedDevices() -> c
+com.hoho.android.usbserial.driver.FtdiSerialDriver -> com.a.a.a.a.d:
+    java.lang.String TAG -> g
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType mType -> h
+    int mInterface -> i
+    int mMaxPacketSize -> j
+    int filterStatusBytes(byte[],byte[],int,int) -> a
+    void reset() -> c
+    void open() -> a
+    void close() -> b
+    int read(byte[],int) -> a
+    int write(byte[],int) -> b
+    int setBaudRate(int) -> a
+    void setParameters(int,int,int,int) -> a
+    long[] convertBaudrate(int) -> b
+    java.util.Map getSupportedDevices() -> d
+com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType -> com.a.a.a.a.e:
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_BM -> a
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_AM -> b
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_2232C -> c
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_R -> d
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_2232H -> e
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType TYPE_4232H -> f
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType[] $VALUES -> g
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType[] values() -> values
+    com.hoho.android.usbserial.driver.FtdiSerialDriver$DeviceType valueOf(java.lang.String) -> valueOf
+com.hoho.android.usbserial.driver.UsbSerialDriver -> com.a.a.a.a.f:
+    void open() -> a
+    void close() -> b
+    int read(byte[],int) -> a
+    int write(byte[],int) -> b
+    void setParameters(int,int,int,int) -> a
+com.hoho.android.usbserial.driver.UsbSerialProber -> com.a.a.a.a.g:
+    com.hoho.android.usbserial.driver.UsbSerialProber FTDI_SERIAL -> a
+    com.hoho.android.usbserial.driver.UsbSerialProber CDC_ACM_SERIAL -> b
+    com.hoho.android.usbserial.driver.UsbSerialProber SILAB_SERIAL -> c
+    com.hoho.android.usbserial.driver.UsbSerialProber[] $VALUES -> d
+    com.hoho.android.usbserial.driver.UsbSerialProber[] values() -> values
+    com.hoho.android.usbserial.driver.UsbSerialProber valueOf(java.lang.String) -> valueOf
+    java.util.List probe(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice) -> a
+    com.hoho.android.usbserial.driver.UsbSerialDriver findFirstDevice(android.hardware.usb.UsbManager) -> a
+    boolean testIfSupported(android.hardware.usb.UsbDevice,java.util.Map) -> b
+    boolean access$100(android.hardware.usb.UsbDevice,java.util.Map) -> a
+com.hoho.android.usbserial.driver.UsbSerialProber$1 -> com.a.a.a.a.h:
+    java.util.List probe(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice) -> a
+com.hoho.android.usbserial.driver.UsbSerialProber$2 -> com.a.a.a.a.i:
+    java.util.List probe(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice) -> a
+com.hoho.android.usbserial.driver.UsbSerialProber$3 -> com.a.a.a.a.j:
+    java.util.List probe(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice) -> a
+com.hoho.android.usbserial.util.SerialInputOutputManager -> com.a.a.a.b.a:
+    java.lang.String TAG -> a
+    com.hoho.android.usbserial.driver.UsbSerialDriver mDriver -> b
+    java.nio.ByteBuffer mReadBuffer -> c
+    java.nio.ByteBuffer mWriteBuffer -> d
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State mState -> e
+    com.hoho.android.usbserial.util.SerialInputOutputManager$Listener mListener -> f
+    com.hoho.android.usbserial.util.SerialInputOutputManager$Listener getListener() -> a
+    void stop() -> b
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State getState() -> c
+    void run() -> run
+    void step() -> d
+com.hoho.android.usbserial.util.SerialInputOutputManager$Listener -> com.a.a.a.b.b:
+    void onNewData(byte[]) -> a
+    void onRunError(java.lang.Exception) -> a
+com.hoho.android.usbserial.util.SerialInputOutputManager$State -> com.a.a.a.b.c:
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State STOPPED -> a
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State RUNNING -> b
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State STOPPING -> c
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State[] $VALUES -> d
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State[] values() -> values
+    com.hoho.android.usbserial.util.SerialInputOutputManager$State valueOf(java.lang.String) -> valueOf
+com.jjoe64.graphview.BarGraphView -> com.jjoe64.graphview.BarGraphView:
+    void drawSeries(android.graphics.Canvas,com.jjoe64.graphview.GraphViewDataInterface[],float,float,float,double,double,double,double,float,com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle) -> a
+com.jjoe64.graphview.CustomLabelFormatter -> com.jjoe64.graphview.a:
+    java.lang.String formatLabel(double,boolean) -> a
+com.jjoe64.graphview.GraphView -> com.jjoe64.graphview.GraphView:
+    android.graphics.Paint paint -> a
+    java.lang.String[] horlabels -> b
+    java.lang.String[] verlabels -> c
+    java.lang.String title -> d
+    boolean scrollable -> e
+    boolean disableTouch -> f
+    double viewportStart -> g
+    double viewportSize -> h
+    android.view.View viewVerLabels -> i
+    com.jjoe64.graphview.compatible.ScaleGestureDetector scaleDetector -> j
+    boolean scalable -> k
+    java.text.NumberFormat[] numberformatter -> l
+    java.util.List graphSeries -> m
+    boolean showLegend -> n
+    float legendWidth -> o
+    com.jjoe64.graphview.GraphView$LegendAlign legendAlign -> p
+    boolean manualYAxis -> q
+    double manualMaxYValue -> r
+    double manualMinYValue -> s
+    com.jjoe64.graphview.GraphViewStyle graphViewStyle -> t
+    com.jjoe64.graphview.GraphView$GraphViewContentView graphViewContentView -> u
+    com.jjoe64.graphview.CustomLabelFormatter customLabelFormatter -> v
+    java.lang.Integer textHeight -> w
+    java.lang.Integer textWidth -> x
+    android.graphics.Rect textBounds -> y
+    boolean staticHorizontalLabels -> z
+    boolean staticVerticalLabels -> A
+    int[] $SWITCH_TABLE$com$jjoe64$graphview$GraphView$LegendAlign -> B
+    com.jjoe64.graphview.GraphViewDataInterface[] _values(int) -> a
+    void addSeries(com.jjoe64.graphview.GraphViewSeries) -> a
+    void drawLegend(android.graphics.Canvas,float,float) -> a
+    void drawSeries(android.graphics.Canvas,com.jjoe64.graphview.GraphViewDataInterface[],float,float,float,double,double,double,double,float,com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle) -> a
+    java.lang.String formatLabel(double,boolean) -> a
+    java.lang.String[] generateHorlabels(float) -> a
+    java.lang.String[] generateVerlabels(float) -> b
+    com.jjoe64.graphview.CustomLabelFormatter getCustomLabelFormatter() -> getCustomLabelFormatter
+    com.jjoe64.graphview.GraphViewStyle getGraphViewStyle() -> getGraphViewStyle
+    com.jjoe64.graphview.GraphView$LegendAlign getLegendAlign() -> getLegendAlign
+    float getLegendWidth() -> getLegendWidth
+    double getMaxX(boolean) -> a
+    double getMaxY() -> getMaxY
+    double getMinX(boolean) -> b
+    double getMinY() -> getMinY
+    boolean isDisableTouch() -> a
+    boolean isScrollable() -> b
+    void redrawAll() -> c
+    void scrollToEnd() -> d
+    void setCustomLabelFormatter(com.jjoe64.graphview.CustomLabelFormatter) -> setCustomLabelFormatter
+    void setDisableTouch(boolean) -> setDisableTouch
+    void setGraphViewStyle(com.jjoe64.graphview.GraphViewStyle) -> setGraphViewStyle
+    void setHorizontalLabels(java.lang.String[]) -> setHorizontalLabels
+    void setLegendAlign(com.jjoe64.graphview.GraphView$LegendAlign) -> setLegendAlign
+    void setLegendWidth(float) -> setLegendWidth
+    void setManualYAxis(boolean) -> setManualYAxis
+    void setManualYAxisBounds(double,double) -> a
+    void setScalable(boolean) -> setScalable
+    void setScrollable(boolean) -> setScrollable
+    void setShowLegend(boolean) -> setShowLegend
+    void setTitle(java.lang.String) -> setTitle
+    void setVerticalLabels(java.lang.String[]) -> setVerticalLabels
+    java.lang.Integer access$0(com.jjoe64.graphview.GraphView) -> a
+    java.lang.Integer access$1(com.jjoe64.graphview.GraphView) -> b
+    android.graphics.Rect access$2(com.jjoe64.graphview.GraphView) -> c
+    void access$3(com.jjoe64.graphview.GraphView,java.lang.Integer) -> a
+    void access$4(com.jjoe64.graphview.GraphView,java.lang.Integer) -> b
+    java.lang.String[] access$5(com.jjoe64.graphview.GraphView) -> d
+    java.lang.String[] access$6(com.jjoe64.graphview.GraphView,float) -> a
+    void access$7(com.jjoe64.graphview.GraphView,java.lang.String[]) -> a
+    java.lang.String[] access$8(com.jjoe64.graphview.GraphView) -> e
+    java.lang.String[] access$9(com.jjoe64.graphview.GraphView,float) -> b
+    void access$10(com.jjoe64.graphview.GraphView,java.lang.String[]) -> b
+    com.jjoe64.graphview.GraphViewStyle access$11(com.jjoe64.graphview.GraphView) -> f
+    java.lang.String access$12(com.jjoe64.graphview.GraphView) -> g
+    java.util.List access$13(com.jjoe64.graphview.GraphView) -> h
+    com.jjoe64.graphview.GraphViewDataInterface[] access$14(com.jjoe64.graphview.GraphView,int) -> a
+    boolean access$15(com.jjoe64.graphview.GraphView) -> i
+    double access$16(com.jjoe64.graphview.GraphView) -> j
+    double access$17(com.jjoe64.graphview.GraphView) -> k
+    void access$18(com.jjoe64.graphview.GraphView,double) -> a
+    boolean access$19(com.jjoe64.graphview.GraphView) -> l
+    boolean access$20(com.jjoe64.graphview.GraphView) -> m
+    android.view.View access$21(com.jjoe64.graphview.GraphView) -> n
+    boolean access$22(com.jjoe64.graphview.GraphView) -> o
+    com.jjoe64.graphview.compatible.ScaleGestureDetector access$23(com.jjoe64.graphview.GraphView) -> p
+    int[] $SWITCH_TABLE$com$jjoe64$graphview$GraphView$LegendAlign() -> e
+com.jjoe64.graphview.GraphView$1 -> com.jjoe64.graphview.b:
+    com.jjoe64.graphview.GraphView this$0 -> a
+com.jjoe64.graphview.GraphView$GraphViewContentView -> com.jjoe64.graphview.c:
+    float lastTouchEventX -> b
+    float graphwidth -> c
+    boolean scrollingStarted -> d
+    com.jjoe64.graphview.GraphView this$0 -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onMoveGesture(float) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.jjoe64.graphview.GraphView$GraphViewData -> com.jjoe64.graphview.d:
+    double valueX -> a
+    double valueY -> b
+    double getX() -> a
+    double getY() -> b
+com.jjoe64.graphview.GraphView$LegendAlign -> com.jjoe64.graphview.e:
+    com.jjoe64.graphview.GraphView$LegendAlign TOP -> a
+    com.jjoe64.graphview.GraphView$LegendAlign MIDDLE -> b
+    com.jjoe64.graphview.GraphView$LegendAlign BOTTOM -> c
+    com.jjoe64.graphview.GraphView$LegendAlign[] ENUM$VALUES -> d
+    com.jjoe64.graphview.GraphView$LegendAlign[] values() -> values
+    com.jjoe64.graphview.GraphView$LegendAlign valueOf(java.lang.String) -> valueOf
+com.jjoe64.graphview.GraphView$VerLabelsView -> com.jjoe64.graphview.f:
+    com.jjoe64.graphview.GraphView this$0 -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.jjoe64.graphview.GraphViewDataInterface -> com.jjoe64.graphview.g:
+    double getX() -> a
+    double getY() -> b
+com.jjoe64.graphview.GraphViewSeries -> com.jjoe64.graphview.h:
+    java.lang.String description -> a
+    com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle style -> b
+    com.jjoe64.graphview.GraphViewDataInterface[] values -> c
+    java.util.List graphViews -> d
+    void addGraphView(com.jjoe64.graphview.GraphView) -> a
+    void appendData(com.jjoe64.graphview.GraphViewDataInterface,boolean,int) -> a
+com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle -> com.jjoe64.graphview.i:
+    int color -> a
+    int thickness -> b
+    com.jjoe64.graphview.ValueDependentColor valueDependentColor -> c
+    com.jjoe64.graphview.ValueDependentColor getValueDependentColor() -> a
+com.jjoe64.graphview.GraphViewStyle -> com.jjoe64.graphview.j:
+    int verticalLabelsColor -> a
+    int horizontalLabelsColor -> b
+    int gridColor -> c
+    float textSize -> d
+    int verticalLabelsWidth -> e
+    int numVerticalLabels -> f
+    int numHorizontalLabels -> g
+    int getGridColor() -> a
+    int getHorizontalLabelsColor() -> b
+    int getNumHorizontalLabels() -> c
+    int getNumVerticalLabels() -> d
+    float getTextSize() -> e
+    int getVerticalLabelsColor() -> f
+    int getVerticalLabelsWidth() -> g
+    void setHorizontalLabelsColor(int) -> a
+    void setNumVerticalLabels(int) -> b
+    void setTextSize(float) -> a
+    void setVerticalLabelsWidth(int) -> c
+com.jjoe64.graphview.LineGraphView -> com.jjoe64.graphview.LineGraphView:
+    android.graphics.Paint paintBackground -> b
+    boolean drawBackground -> c
+    void drawSeries(android.graphics.Canvas,com.jjoe64.graphview.GraphViewDataInterface[],float,float,float,double,double,double,double,float,com.jjoe64.graphview.GraphViewSeries$GraphViewSeriesStyle) -> a
+    int getBackgroundColor() -> getBackgroundColor
+    boolean getDrawBackground() -> getDrawBackground
+    void setBackgroundColor(int) -> setBackgroundColor
+    void setDrawBackground(boolean) -> setDrawBackground
+com.jjoe64.graphview.ValueDependentColor -> com.jjoe64.graphview.k:
+    int get(com.jjoe64.graphview.GraphViewDataInterface) -> a
+com.jjoe64.graphview.compatible.RealScaleGestureDetector -> com.jjoe64.graphview.a.a:
+com.jjoe64.graphview.compatible.ScaleGestureDetector -> com.jjoe64.graphview.a.b:
+    java.lang.Object realScaleGestureDetector -> a
+    java.lang.reflect.Method method_getScaleFactor -> b
+    java.lang.reflect.Method method_isInProgress -> c
+    java.lang.reflect.Method method_onTouchEvent -> d
+    boolean isInProgress() -> a
+    void onTouchEvent(android.view.MotionEvent) -> a
+com.jjoe64.graphview.compatible.ScaleGestureDetector$SimpleOnScaleGestureListener -> com.jjoe64.graphview.a.c:
